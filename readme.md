@@ -1,4 +1,4 @@
-## To run the jupyter notebook
+# To run the jupyter notebook
 
 First you have to activate the virtual environment "venv"
 
@@ -14,6 +14,15 @@ or you can start jupyterlab(recommended)
 
 to activate the notebook
 
+after installing and during work if you need to add another package, for example: requests etc. you have to do this:
+
+    pip install requests
+
+after that you have to update the requirements.txt file with this:
+
+    pip freeze | Select-String requests >> requirements.txt
+
+so, it will automatically append the requirements.txt file with the new addition from "pip list"
 # Basic shortcuts for ease of use
 
 1. ESC : select a cell to command mode from writing mode
